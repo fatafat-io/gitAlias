@@ -1,0 +1,14 @@
+alias gst='git status' # check git status
+alias gpl='git pull' # pull current branch
+alias gph='git push' # push current branch
+alias gphu='git push --set-upstream origin' # set oriding for this new branch
+alias gdf='git diff' # git diff current un-comited changes
+alias gad='git add' # add following file to git; you are supposed to fill in the rest
+alias gada='git add .' # add all current fiels
+alias gcm='git commit -m' # commit current change using following message; you are supposed to provide a string with a message
+alias gck='git checkout' # checkout to following; you are supposed to fill in the rest
+alias gbh='git branch' # list all branches
+alias grH='git reset HEAD' # get rid of all tracking changes
+alias gckb='git checkout -b' # creat and checkout to following new branch
+alias gbhd='git branch -d' # delete following branch
+alias gbhD='git branch -D' # delete dpollowing branch even if there are some uncommited changes
