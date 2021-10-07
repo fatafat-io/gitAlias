@@ -1,6 +1,7 @@
 alias gst='git status' # check git status
 alias gpl='git pull' # pull current branch
-alias gph='git push' # push current branch
+alias gph='alias gph="git push 2>&1 >/dev/null | tail -2 | grep 'git push' | awk '{split(\$0,a,\" \"); print a[5]}' | xargs -I{} git push --set-upstream origin '{}'"' # push current branch
+alias gphn="git push --no-verify 2>&1 >/dev/null | tail -2 | grep 'git push' | awk '{split(\$0,a,\" \"); print a[5]}' | xargs -I{} git push --set-upstream origin '{}' --no-verify" # push current branch withou verification
 alias gphu='git push --set-upstream origin' # set oriding for this new branch
 alias gdf='git diff' # git diff current un-comited changes
 alias gad='git add' # add following file to git; you are supposed to fill in the rest
